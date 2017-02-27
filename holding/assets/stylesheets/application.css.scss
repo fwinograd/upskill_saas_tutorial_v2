@@ -52,6 +52,10 @@ background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, F
   font-weight: 800;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: yellow;
+}
+
 // Home Styles
 .home-callout {
     color: white;
