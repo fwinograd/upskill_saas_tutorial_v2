@@ -13,11 +13,23 @@
 ActiveRecord::Schema.define(version: 20170302040235) do
 
   create_table "contacts", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.text     "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "contacts_old", force: :cascade do |t|
     t.string   "mame"
     t.string   "email"
     t.text     "comments"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "schema_migrations_old", primary_key: "version", id: :string, force: :cascade do |t|
+    t.index ["version"], name: "sqlite_autoindex_schema_migrations_old_1", unique: true
   end
 
 end
