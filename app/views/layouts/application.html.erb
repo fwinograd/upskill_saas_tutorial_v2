@@ -31,7 +31,11 @@
       </div><!-- /.navbar-caloppse -->
     </div>
   </nav>
-  
+    <div class="container">
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert-#{type}" %>
+      <% end %>
+    </div>
     <div >
       <%= yield %>
     </div>

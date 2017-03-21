@@ -2076,3 +2076,131 @@ Processing by ContactsController#new as HTML
 Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/contacts/new" for 76.14.58.132 at 2017-03-21 16:58:02 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-21 16:58:05 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WNWe/0+l8t24ucORVuPCVX7YtfgxmjevL1fXsZ851bPmFY3HHYXva9cZSRfaO3/ZegTf0Y5vG+C5LUEDbskmOA==", "contact"=>{"name"=>"", "email"=>"", "comments"=>""}, "commit"=>"Submit"}
+  [1m[35m (1.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contacts/new
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/contacts/new" for 76.14.58.132 at 2017-03-21 16:58:05 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 119ms (Views: 117.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-21 16:59:25 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G1018fPq4t2rUmRIrjxX3WOmG5Sx+fcTLmv1bQaSTZSlnSbJocr/a8Ty7s4i5OpRZ3pxvQ4M21y4EWPf92K+Hw==", "contact"=>{"name"=>"fbdf", "email"=>"dfdfg", "comments"=>"66666"}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "comments", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "fbdf"], ["email", "dfdfg"], ["comments", "66666"], ["created_at", 2017-03-21 16:59:25 UTC], ["updated_at", 2017-03-21 16:59:25 UTC]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contacts/new
+Completed 302 Found in 78ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/contacts/new" for 76.14.58.132 at 2017-03-21 16:59:26 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 76.14.58.132 at 2017-03-21 20:49:59 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 597ms (Views: 578.1ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-21 20:50:02 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BQt70NJlK4rSOHN6Oc7HNaqOatVQFEtjlH86HLxFhtC7y2jogEU2PL2Y+fy1Fnq5rlIA/O/hZywCBayuTbV1Ww==", "contact"=>{"name"=>"", "email"=>"", "comments"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contacts/new
+Completed 302 Found in 16ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts/new" for 76.14.58.132 at 2017-03-21 20:50:02 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-21 20:50:16 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eHyc7K8mc+KF5qiMDeGoanhbsS7YHpEoFGzSlYGr0vDGvI/U/QZuVOpGIgqBORXmfIfbB2frvWeCFkQncFshew==", "contact"=>{"name"=>"tyut", "email"=>"tyutuy", "comments"=>"tyutyu 9"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "comments", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "tyut"], ["email", "tyutuy"], ["comments", "tyutyu 9"], ["created_at", 2017-03-21 20:50:16 UTC], ["updated_at", 2017-03-21 20:50:16 UTC]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contacts/new
+Completed 302 Found in 28ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/contacts/new" for 76.14.58.132 at 2017-03-21 20:50:17 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-21 20:56:12 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HX1Foi08vPDTn8rVXyN44sarpdZ0/ms6esvE6wLDdJijvVaafxyhRrw/QFPT+8VuwnfP/8sLR3XssVJZ8zOHEw==", "contact"=>{"name"=>"", "email"=>"", "comments"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contacts/new
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/new" for 76.14.58.132 at 2017-03-21 20:56:12 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-21 20:56:34 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QcI/xzEXWFyevGzR3keIdISPLJELZWiaeIk0RxtGs+H/Aiz/YzdF6vEc5ldSnzX4gFNGuLSQRNXu86L16rZAag==", "contact"=>{"name"=>"cxvbcvb", "email"=>"dfgd", "comments"=>"the last one for now!\r\n"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "comments", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "cxvbcvb"], ["email", "dfgd"], ["comments", "the last one for now!\r\n"], ["created_at", 2017-03-21 20:56:34 UTC], ["updated_at", 2017-03-21 20:56:34 UTC]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contacts/new
+Completed 302 Found in 13ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/contacts/new" for 76.14.58.132 at 2017-03-21 20:56:34 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
