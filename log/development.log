@@ -2509,3 +2509,156 @@ Processing by ContactsController#new as HTML
 Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-23 02:38:08 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 108ms (Views: 88.8ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-23 02:38:40 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xJQP+s7ZV/jtnN5fbtC0h904jbla6IOD32WwyUUmMAd6VBzCnPlKToI8VNniCAkL2eTnkOUdr8xJHyZ7tNbDjA==", "contact"=>{"name"=>"Fred Winograd", "email"=>"fwinograd@yahoo.com", "comments"=>"This should work now."}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "comments", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fred Winograd"], ["email", "fwinograd@yahoo.com"], ["comments", "This should work now."], ["created_at", 2017-03-23 02:38:40 UTC], ["updated_at", 2017-03-23 02:38:40 UTC]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  Rendering contact_mailer/contact_email.html.erb
+  Rendered contact_mailer/contact_email.html.erb (0.8ms)
+ContactMailer#contact_email: processed outbound mail in 253.0ms
+Sent mail to march2it@hotmail.com (61.4ms)
+Date: Thu, 23 Mar 2017 02:38:40 +0000
+From: fwinograd@yahoo.com
+To: march2it@hotmail.com
+Message-ID: <58d33530d1832_887220a66476727@fwinograd-upskill-rails-tutoria-4484298.mail>
+Subject: Contact Form Message
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <p>You have received a message from the site's contact form, from</p>
+      Fred Winograd, #( email }.</p>
+      <p>This should work now.</p>
+    </body>
+  </head>    
+</html>
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contact-us
+Completed 302 Found in 822ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-23 02:38:40 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-23 16:14:28 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 136ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-23 16:15:07 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gVSFLeTbduu40ZGvxJyYadFQqim2tVaCGLCdxQNI+Ng/lJYVtvtrXddxGylIRCXl1YzAAAlAes2Oygt38rgLUw==", "contact"=>{"name"=>"Fred Winograd", "email"=>"myemail@sample.com", "comments"=>"This is the 2nd email."}, "commit"=>"Submit"}
+  [1m[35m (19.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.2ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "comments", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fred Winograd"], ["email", "myemail@sample.com"], ["comments", "This is the 2nd email."], ["created_at", 2017-03-23 16:15:08 UTC], ["updated_at", 2017-03-23 16:15:08 UTC]]
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  Rendering contact_mailer/contact_email.html.erb
+  Rendered contact_mailer/contact_email.html.erb (0.5ms)
+ContactMailer#contact_email: processed outbound mail in 8.2ms
+Sent mail to march2it@hotmail.com (19.4ms)
+Date: Thu, 23 Mar 2017 16:15:08 +0000
+From: myemail@sample.com
+To: march2it@hotmail.com
+Message-ID: <58d3f48c96ac_887220a664768b8@fwinograd-upskill-rails-tutoria-4484298.mail>
+Subject: Contact Form Message
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <p>You have received a message from the site's contact form, from</p>
+      Fred Winograd, #( @email }.</p>
+      <p>This is the 2nd email.</p>
+    </body>
+  </head>    
+</html> 
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contact-us
+Completed 302 Found in 74ms (ActiveRecord: 36.8ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-23 16:15:08 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-23 16:16:59 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-23 16:17:40 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J9x/V5pw86jJco+cDtf4XSYEtfZK4tSRkbTMU795DbSZHGxvyFDuHqbSBRqCD0XRItjf3/UX+N4HzlrhTon+Pw==", "contact"=>{"name"=>"Fred C. Winograd", "email"=>"myemail@sample.com", "comments"=>"This one SHOULD work. It's the third try."}, "commit"=>"Submit"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "comments", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fred C. Winograd"], ["email", "myemail@sample.com"], ["comments", "This one SHOULD work. It's the third try."], ["created_at", 2017-03-23 16:17:40 UTC], ["updated_at", 2017-03-23 16:17:40 UTC]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  Rendering contact_mailer/contact_email.html.erb
+  Rendered contact_mailer/contact_email.html.erb (0.5ms)
+ContactMailer#contact_email: processed outbound mail in 7.5ms
+Sent mail to march2it@hotmail.com (2.8ms)
+Date: Thu, 23 Mar 2017 16:17:40 +0000
+From: myemail@sample.com
+To: march2it@hotmail.com
+Message-ID: <58d3f524e0805_887220a70476936@fwinograd-upskill-rails-tutoria-4484298.mail>
+Subject: Contact Form Message
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <p>You have received a message from the site's contact form, from</p>
+      Fred C. Winograd, myemail@sample.com.</p>
+      <p>This one SHOULD work. It&#39;s the third try.</p>
+    </body>
+  </head>    
+</html> 
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contact-us
+Completed 302 Found in 26ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-23 16:17:41 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
