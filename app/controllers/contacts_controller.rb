@@ -4,6 +4,7 @@ class ContactsController < ApplicationController
   end
   
   def create
+    puts "The create contact controller Is ACtive"
     @contact = Contact.new(contact_params)
     if @contact.save
       name = params[:contact][:name]
