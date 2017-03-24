@@ -2662,3 +2662,201 @@ Processing by ContactsController#new as HTML
 Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-24 00:04:17 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 896ms (Views: 862.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-24 00:04:25 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 130ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-24 00:04:27 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-24 00:04:34 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rraJ23h7HsvYNwwjgHocz8QWz9WffgcjBo+l+oxheu2Wrlimj6Jp+pY9Ki7qklQzRy1mJxH9dof95Ch9TF8udA==", "contact"=>{"name"=>"fgdfg", "email"=>"", "comments"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contact-us
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-24 00:04:34 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-24 00:04:36 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WSbdL7knCW7J4EG7VDsbG348PtpteLpaUQspK790xNbn5s4X6wcU2KZAyz3Y46aXeuBU89KNlhXHcb+ZToQ3XQ==", "contact"=>{"name"=>"", "email"=>"", "comments"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contact-us
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-24 00:04:36 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 159ms (Views: 156.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-24 00:05:06 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SoaZRoEBwjer38K5Tg66vhssGLvbEddPuHNgcA2D0HD0Rop+0yHfgcR/SD/C1gcyH/BykmTk+wAuCfbC/HMj+w==", "contact"=>{"name"=>"dfgdg", "email"=>"fankie23@theMob.com", "comments"=>"dfgdfgdfgd"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "comments", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "dfgdg"], ["email", "fankie23@theMob.com"], ["comments", "dfgdfgdfgd"], ["created_at", 2017-03-24 00:05:06 UTC], ["updated_at", 2017-03-24 00:05:06 UTC]]
+  [1m[35m (15.7ms)[0m  [1m[36mcommit transaction[0m
+  Rendering contact_mailer/contact_email.html.erb
+  Rendered contact_mailer/contact_email.html.erb (0.9ms)
+ContactMailer#contact_email: processed outbound mail in 248.3ms
+Sent mail to march2it@hotmail.com (18.7ms)
+Date: Fri, 24 Mar 2017 00:05:07 +0000
+From: fankie23@theMob.com
+To: march2it@hotmail.com
+Message-ID: <58d462b3b9d6b_49ff2479da0374bf@fwinograd-upskill-rails-tutoria-4484298.mail>
+Subject: Contact Form Message
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <p>You have received a message from the site's contact form, from</p>
+      dfgdg, fankie23@theMob.com.</p>
+      <p>dfgdfgdfgd</p>
+    </body>
+  </head>    
+</html> 
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contact-us
+Completed 302 Found in 975ms (ActiveRecord: 17.2ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-24 00:05:07 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-24 00:07:06 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 586ms (Views: 562.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-24 00:07:09 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 113ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-24 00:07:12 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 83ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-24 00:07:16 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-24 00:07:20 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eBaNjYTvZKcWZBof/o0eJlslnwthpul4mnVW+fJJuLRADlzwczYTllhuPBKUZVba2B42+e8lmNxhHtt+MnfsLQ==", "contact"=>{"name"=>"dfgd", "email"=>"", "comments"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contact-us
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-24 00:07:20 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 76.14.58.132 at 2017-03-24 00:07:43 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m2U/EPnqoL/7Iq/fn3Z70xkhANTbCz78255rht93lHYlpSwoq8q9CZSCJVkTrsZfHf1q/WT+ErNN5P00Lodn/Q==", "contact"=>{"name"=>"fghf", "email"=>"johnny12@theMob.net", "comments"=>"sdfs"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "contacts" ("name", "email", "comments", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "fghf"], ["email", "johnny12@theMob.net"], ["comments", "sdfs"], ["created_at", 2017-03-24 00:07:43 UTC], ["updated_at", 2017-03-24 00:07:43 UTC]]
+  [1m[35m (14.1ms)[0m  [1m[36mcommit transaction[0m
+  Rendering contact_mailer/contact_email.html.erb
+  Rendered contact_mailer/contact_email.html.erb (1.1ms)
+ContactMailer#contact_email: processed outbound mail in 156.0ms
+Sent mail to march2it@hotmail.com (11.3ms)
+Date: Fri, 24 Mar 2017 00:07:43 +0000
+From: johnny12@theMob.net
+To: march2it@hotmail.com
+Message-ID: <58d4634fd2f55_4a1f21c13749096c@fwinograd-upskill-rails-tutoria-4484298.mail>
+Subject: Contact Form Message
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <body>
+      <p>You have received a message from the site's contact form, from</p>
+      fghf, johnny12@theMob.net.</p>
+      <p>sdfs</p>
+    </body>
+  </head>    
+</html> 
+Redirected to https://upskill-rails-tutoria-fwinograd.c9users.io/contact-us
+Completed 302 Found in 698ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/contact-us" for 76.14.58.132 at 2017-03-24 00:07:43 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 0.0ms)
+
+
