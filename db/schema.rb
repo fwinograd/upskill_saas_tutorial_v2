@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170325012319) do
+ActiveRecord::Schema.define(version: 20170326193315) do
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
@@ -20,16 +20,9 @@ ActiveRecord::Schema.define(version: 20170325012319) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "contacts_old", force: :cascade do |t|
-    t.string   "mame"
-    t.string   "email"
-    t.text     "comments"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "schema_migrations_old", primary_key: "version", id: :string, force: :cascade do |t|
-    t.index ["version"], name: "sqlite_autoindex_schema_migrations_old_1", unique: true
+  create_table "plans", force: :cascade do |t|
+    t.string  "name"
+    t.decimal "price"
   end
 
   create_table "users", force: :cascade do |t|
@@ -45,6 +38,7 @@ ActiveRecord::Schema.define(version: 20170325012319) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.integer  "plan_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
