@@ -4725,3 +4725,908 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:00:08 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 919ms (Views: 858.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 03:00:13 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (51.5ms)
+Completed 200 OK in 239ms (Views: 119.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:00:57 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 173ms (Views: 169.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 03:01:00 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (2.9ms)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 85ms (Views: 83.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:07:04 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-03-27 03:07:05 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:10: syntax error, unexpected '<', expecting ')'
+        <% end );@output_buffer.safe_append='
+         ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/devise/registrations/new.html.erb:10: syntax error, unexpected '<', expecting ')'
+app/views/devise/registrations/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.5ms)
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:07:23 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:07:25 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 03:07:27 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:10: syntax error, unexpected '<', expecting ')'
+        <% end );@output_buffer.safe_append='
+         ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/devise/registrations/new.html.erb:10: syntax error, unexpected '<', expecting ')'
+app/views/devise/registrations/new.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/devise/registrations/new.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.1ms)
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:07:29 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.6ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 03:08:04 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial devise/registrations/_pro_form, devise/_pro_form, application/_pro_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/saasapp/app/views"
+  * "/usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/devise-4.2.0/app/views"
+):
+    4:       <div class="well">
+    5:         <h2>Sign up</h2>
+    6:         <% if params[:plan] == '2'%>
+    7:           <%= render "pro_form" %>
+    8:         <% else %>
+    9:           <%= render "basic_form" %>
+   10:         <% end %>
+  
+app/views/devise/registrations/new.html.erb:7:in `_app_views_devise_registrations_new_html_erb___3012290745533724562_70110380857800'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.2ms)
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:08:10 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.4ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-03-27 03:08:12 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (2.8ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 03:08:19 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial devise/registrations/_pro_form, devise/_pro_form, application/_pro_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/saasapp/app/views"
+  * "/usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/devise-4.2.0/app/views"
+):
+    4:       <div class="well">
+    5:         <h2>Sign up</h2>
+    6:         <% if params[:plan] == '2'%>
+    7:           <%= render "pro_form" %>
+    8:         <% else %>
+    9:           <%= render "basic_form" %>
+   10:         <% end %>
+  
+app/views/devise/registrations/new.html.erb:7:in `_app_views_devise_registrations_new_html_erb___3012290745533724562_70110550934820'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.4ms)
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 03:09:36 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial devise/registrations/_pro_form, devise/_pro_form, application/_pro_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/saasapp/app/views"
+  * "/usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/devise-4.2.0/app/views"
+):
+    4:       <div class="well">
+    5:         <h2>Sign up</h2>
+    6:         <% if params[:plan] == '2'%>
+    7:           <%= render "pro_form" %>
+    8:         <% else %>
+    9:           <%= render "basic_form" %>
+   10:         <% end %>
+  
+app/views/devise/registrations/new.html.erb:7:in `_app_views_devise_registrations_new_html_erb___3012290745533724562_70110380599980'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.8ms)
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 03:10:03 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (2.3ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 64ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:10:09 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 209ms (Views: 205.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-03-27 03:10:12 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (4.3ms)
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:10:17 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 03:10:19 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (7.0ms)
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 200ms (Views: 199.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:14:12 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-03-27 03:14:13 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (3.4ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:14:15 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 03:14:17 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (3.0ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 160ms (Views: 158.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 03:37:41 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.9ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 47.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 03:37:42 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:34: syntax error, unexpected ':', expecting '}'
+...add_month_numbers: true} {name: nil, id: "card-month"} );@ou...
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:34: Can't assign to nil
+...onth_numbers: true} {name: nil, id: "card-month"} );@output_...
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:35: syntax error, unexpected ')', expecting =>
+... {name: nil, id: "card_year"} );@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+...er.safe_append='  '.freeze; end ;@output_buffer.to_s
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:44: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/devise/registrations/_pro_form.html.erb:34: syntax error, unexpected ':', expecting '}'
+app/views/devise/registrations/_pro_form.html.erb:34: Can't assign to nil
+app/views/devise/registrations/_pro_form.html.erb:35: syntax error, unexpected ')', expecting =>
+app/views/devise/registrations/_pro_form.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/registrations/_pro_form.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/devise/registrations/_pro_form.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/registrations/new.html.erb:7:in `_app_views_devise_registrations_new_html_erb___3012290745533724562_70110385705520'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.5ms)
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 15:08:25 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (78.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (80.7ms)
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:35: syntax error, unexpected ')', expecting =>
+... {name: nil, id: "card_year"} );@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+...er.safe_append='  '.freeze; end ;@output_buffer.to_s
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:44: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/devise/registrations/_pro_form.html.erb:35: syntax error, unexpected ')', expecting =>
+app/views/devise/registrations/_pro_form.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/registrations/_pro_form.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/devise/registrations/_pro_form.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/registrations/new.html.erb:7:in `_app_views_devise_registrations_new_html_erb___3012290745533724562_70110513925000'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (106.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (143.8ms)
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 15:10:37 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (453.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (455.5ms)
+Completed 500 Internal Server Error in 461ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `lable_tag' for #<#<Class:0x007f87bc1a59c8>:0x007f87c0f27a70>
+Did you mean?  label_tag):
+    30:   </div>
+    31:   
+    32:   <div class="form-group" >
+    33:     <%= lable_tag :card_month, "Card Expiration" %>
+    34:     <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card-month"} %>
+    35:    
+    36:   </div>
+  
+app/views/devise/registrations/_pro_form.html.erb:33:in `block in _app_views_devise_registrations__pro_form_html_erb___1685815922762333462_70110517459080'
+app/views/devise/registrations/_pro_form.html.erb:1:in `_app_views_devise_registrations__pro_form_html_erb___1685815922762333462_70110517459080'
+app/views/devise/registrations/new.html.erb:7:in `_app_views_devise_registrations_new_html_erb___3012290745533724562_70110517211940'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (136.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (181.4ms)
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 15:12:09 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (4.7ms)
+  Rendered devise/shared/_links.html.erb (18.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 241ms (Views: 239.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 15:12:13 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (4.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 259ms (Views: 73.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 15:12:16 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (5.1ms)
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 139ms (Views: 137.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 15:21:01 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:34: syntax error, unexpected ')', expecting '}'
+... {name: nil, id: "card_month" );@output_buffer.safe_append='
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+...er.safe_append='  '.freeze; end ;@output_buffer.to_s
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_pro_form.html.erb:44: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/devise/registrations/_pro_form.html.erb:34: syntax error, unexpected ')', expecting '}'
+app/views/devise/registrations/_pro_form.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/registrations/_pro_form.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/devise/registrations/_pro_form.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+app/views/devise/registrations/new.html.erb:7:in `_app_views_devise_registrations_new_html_erb___3012290745533724562_70110379825980'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.4ms)
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 15:21:43 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (4.1ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 16:06:03 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:5: syntax error, unexpected '<'
+        <h1>Pro Account</h1>
+         ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+        <h1>Pro Account</h1>
+                       ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:6: unknown regexp option - M
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...Pro account for $10/Mo. and get full acces to the comunity w...
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:8: unknown regexp option - h
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:8: syntax error, unexpected tINTEGER, expecting keyword_end
+@output_buffer.safe_append='        <h1>Basic Account</h1>
+                                                         ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+        <p>Sign up for access to the Basic acco...
+                  ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...       <p>Sign up for access to the Basic account and get fu...
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:12: unknown regexp option - h
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:12: syntax error, unexpected tINTEGER, expecting keyword_end
+        <h2>Sign up</h2>
+                       ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:14: syntax error, unexpected tINTEGER, expecting keyword_end
+'.freeze;         if params[:plan] == '2'
+                                        ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:21: syntax error, unexpected '<', expecting keyword_end
+      </div>
+       ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:22: unknown regexp options - dv
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:23: syntax error, unexpected '<'
+  </div>
+   ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:24: unknown regexp options - dv
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:24: unterminated string meets end of file
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/devise/registrations/new.html.erb:5: syntax error, unexpected '<'
+app/views/devise/registrations/new.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:6: unknown regexp option - M
+app/views/devise/registrations/new.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/devise/registrations/new.html.erb:8: unknown regexp option - h
+app/views/devise/registrations/new.html.erb:8: syntax error, unexpected tINTEGER, expecting keyword_end
+app/views/devise/registrations/new.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:12: unknown regexp option - h
+app/views/devise/registrations/new.html.erb:12: syntax error, unexpected tINTEGER, expecting keyword_end
+app/views/devise/registrations/new.html.erb:14: syntax error, unexpected tINTEGER, expecting keyword_end
+app/views/devise/registrations/new.html.erb:21: syntax error, unexpected '<', expecting keyword_end
+app/views/devise/registrations/new.html.erb:22: unknown regexp options - dv
+app/views/devise/registrations/new.html.erb:23: syntax error, unexpected '<'
+app/views/devise/registrations/new.html.erb:24: unknown regexp options - dv
+app/views/devise/registrations/new.html.erb:24: unterminated string meets end of file
+app/views/devise/registrations/new.html.erb:24: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.6ms)
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 16:06:54 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:5: syntax error, unexpected '<'
+        <h1>Pro Account</h1>
+         ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+        <h1>Pro Account</h1>
+                       ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:6: unknown regexp option - M
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+...Pro account for $10/Mo. and get full acces to the comunity w...
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:8: unknown regexp option - h
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:8: syntax error, unexpected tINTEGER, expecting keyword_end
+@output_buffer.safe_append='        <h1>Basic Account</h1>
+                                                         ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+        <p>Sign up for access to the Basic acco...
+                  ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...       <p>Sign up for access to the Basic account and get fu...
+...                               ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:12: unknown regexp option - h
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:12: syntax error, unexpected tINTEGER, expecting keyword_end
+        <h2>Sign up</h2>
+                       ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:14: syntax error, unexpected tINTEGER, expecting keyword_end
+'.freeze;         if params[:plan] == '2'
+                                        ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:21: syntax error, unexpected '<', expecting keyword_end
+      </div>
+       ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:22: unknown regexp options - dv
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:23: syntax error, unexpected '<'
+  </div>
+   ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:24: unknown regexp options - dv
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:24: unterminated string meets end of file
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:24: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/devise/registrations/new.html.erb:5: syntax error, unexpected '<'
+app/views/devise/registrations/new.html.erb:5: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:6: unknown regexp option - M
+app/views/devise/registrations/new.html.erb:6: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/devise/registrations/new.html.erb:8: unknown regexp option - h
+app/views/devise/registrations/new.html.erb:8: syntax error, unexpected tINTEGER, expecting keyword_end
+app/views/devise/registrations/new.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/devise/registrations/new.html.erb:12: unknown regexp option - h
+app/views/devise/registrations/new.html.erb:12: syntax error, unexpected tINTEGER, expecting keyword_end
+app/views/devise/registrations/new.html.erb:14: syntax error, unexpected tINTEGER, expecting keyword_end
+app/views/devise/registrations/new.html.erb:21: syntax error, unexpected '<', expecting keyword_end
+app/views/devise/registrations/new.html.erb:22: unknown regexp options - dv
+app/views/devise/registrations/new.html.erb:23: syntax error, unexpected '<'
+app/views/devise/registrations/new.html.erb:24: unknown regexp options - dv
+app/views/devise/registrations/new.html.erb:24: unterminated string meets end of file
+app/views/devise/registrations/new.html.erb:24: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.5ms)
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 16:07:25 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:10: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;       else 
+                    ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/devise/registrations/new.html.erb:10: syntax error, unexpected keyword_else, expecting keyword_end
+app/views/devise/registrations/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/devise/registrations/new.html.erb:27: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.3ms)
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 16:10:29 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:10: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;       else 
+                    ^
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/saasapp/app/views/devise/registrations/new.html.erb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/devise/registrations/new.html.erb:10: syntax error, unexpected keyword_else, expecting keyword_end
+app/views/devise/registrations/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/devise/registrations/new.html.erb:27: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 16:11:15 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (151.2ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (171.0ms)
+Completed 200 OK in 254ms (Views: 253.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 16:11:32 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (7.8ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 93ms (Views: 80.9ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-03-27 16:11:33 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (3.8ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 85ms (Views: 83.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 16:11:45 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 16:11:46 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (4.0ms)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 16:11:50 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 16:13:42 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 64ms (Views: 60.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-03-27 16:13:44 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (3.0ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 90ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 16:13:49 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 16:13:51 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (3.5ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 16:14:51 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 87ms (Views: 83.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-03-27 16:14:53 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (2.7ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 16:16:05 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-03-27 16:16:06 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (2.5ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-03-27 16:16:13 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-27 16:16:15 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (3.7ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
