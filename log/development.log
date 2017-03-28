@@ -5640,3 +5640,15 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 240ms (Views: 220.2ms | ActiveRecord: 12.1ms)
 
 
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-03-28 17:04:00 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (64.0ms)
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 597ms (Views: 559.9ms | ActiveRecord: 1.2ms)
+
+
