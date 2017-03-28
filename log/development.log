@@ -5630,3 +5630,13 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 66.102.6.147 at 2017-03-28 01:09:05 +0000
+Cannot render console from 66.102.6.147! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (11.8ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 240ms (Views: 220.2ms | ActiveRecord: 12.1ms)
+
+
