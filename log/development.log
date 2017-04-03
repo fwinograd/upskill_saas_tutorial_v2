@@ -5770,3 +5770,197 @@ Migrating to AddStripeCustomerTokenToUsers (20170403161948)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+Started GET "/" for 76.14.58.132 at 2017-04-03 16:37:32 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 528ms (Views: 491.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-04-03 16:37:37 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.3ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/saasapp/app/views/devise/registrations/_basic_form.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+... hidden_field_tag 'plan' params[:plan] );@output_buffer.safe...
+...                               ^):
+  
+app/views/devise/registrations/_basic_form.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/devise/registrations/new.html.erb:19:in `_app_views_devise_registrations_new_html_erb___538625791591290239_69847557528300'
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0@saasapp/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.5ms)
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-04-03 16:40:52 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (58.2ms)
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (64.3ms)
+Completed 200 OK in 232ms (Views: 230.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-04-03 16:40:58 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-04-03 16:41:00 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (2.3ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-04-03 16:42:33 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.4ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 82ms (Views: 78.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-04-03 16:42:34 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (2.7ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 75ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-04-03 16:43:46 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-04-03 16:43:49 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (3.8ms)
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 173ms (Views: 172.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-04-03 17:04:23 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (5.5ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 132ms (Views: 119.9ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-04-03 17:04:24 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (9.7ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-04-03 17:07:06 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 192ms (Views: 189.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-04-03 17:07:08 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (3.0ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-04-03 17:09:58 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 191ms (Views: 188.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?plan=1" for 76.14.58.132 at 2017-04-03 17:10:00 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"1"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (3.8ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-04-03 17:10:05 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-04-03 17:10:07 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (4.8ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
