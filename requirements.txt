@@ -1,0 +1,8 @@
+Stripe integration
+    *1 extend DB to store the Stripe customer ID or token.in the Users table
+    *Javascript should prevent pro for from submitting & send card info to stripe.
+    Stripe returns Card Token. (one time use token)
+    *Javascript takes card token hidden fields (plan, card token) plus the Devise email, psw data.
+    *Once validated, Send user info (email, plan id) & Card token to Stripe. Stripe will create a Subscription 
+    and send back a Customer token Now Rails should store Customer token and other inf locally.
+    
