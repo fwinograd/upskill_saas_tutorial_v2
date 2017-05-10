@@ -6,3 +6,11 @@ Stripe integration
     *Once validated, Send user info (email, plan id) & Card token to Stripe. Stripe will create a Subscription 
     and send back a Customer token Now Rails should store Customer token and other inf locally.
     
+    
+    Stripe Integration
+    * User should have custom token in the users table
+    * Javascript should prevent Prp form from form submiting when user fills it out,
+    and should send card info to Stripe. Stripe will return a Card Token.
+    * Javascript will take basic fields and Card Token and planId and sent to rails.
+    * Send userId email planId and Card Toek to Stripe server and Stripe will return a Customer Token. Rails should save Customer and user info, save locally.
+    
