@@ -1,5 +1,5 @@
 /* global $,Stripe */
-//Document_ready
+//Document_ready  OK
   $(document).on('turbolinks:load', function() {
     var theForm = $('#pro_form');
     var submitBtn = $('#form-signup-btn'); 
