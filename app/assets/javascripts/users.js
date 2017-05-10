@@ -16,7 +16,7 @@
         cvcNum = $("#card_code").val(),
         expMonth = $("#card_month").val(),
         expYear = $("#card_year").val();
-        
+         
 
       // Use Stripe js library to check for card errors
       var error = false;
