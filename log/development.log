@@ -11252,3 +11252,119 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 84ms (Views: 80.8ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-05-11 20:42:40 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://repeat-upskill-updated-fwinograd.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 141ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-05-11 20:42:40 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 180ms (Views: 168.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-05-11 20:42:40 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 72.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 76.14.58.132 at 2017-05-11 20:42:49 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Pb4X4dcul3IJ0EkUEHf684pe2SgAXSb0UYawOjb0KCY2csKwpXsi6cs8qbgAMcWoyKNU4FoTuBbvW11ntKIk6A=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://repeat-upskill-updated-fwinograd.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-05-11 20:42:49 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.1ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 72ms (Views: 69.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-05-11 20:42:53 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (5.7ms)
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 131ms (Views: 129.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=5" for 76.14.58.132 at 2017-05-11 20:43:01 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"5"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (2.8ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 114ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=5" for 76.14.58.132 at 2017-05-11 20:45:47 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"5"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_basic_form.html.erb (4.2ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 131ms (Views: 102.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/sign_up?plan=2" for 76.14.58.132 at 2017-05-11 20:46:03 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"2"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/_pro_form.html.erb (5.6ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 87ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=5" for 76.14.58.132 at 2017-05-11 20:49:35 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"5"}
+Redirected to https://repeat-upskill-updated-fwinograd.c9users.io/
+Filter chain halted as :select_plan rendered or redirected
+Completed 302 Found in 120ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 76.14.58.132 at 2017-05-11 20:49:35 +0000
+Cannot render console from 76.14.58.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mPlan Load (0.3ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPlan Load (0.2ms)[0m  [1m[34mSELECT  "plans".* FROM "plans" WHERE "plans"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 129ms (Views: 112.0ms | ActiveRecord: 1.7ms)
+
+
