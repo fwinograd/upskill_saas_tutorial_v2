@@ -14,3 +14,9 @@ Stripe integration
     * Javascript will take basic fields and Card Token and planId and sent to rails.
     * Send userId email planId and Card Toek to Stripe server and Stripe will return a Customer Token. Rails should save Customer and user info, save locally.
     
+    User Priles
+    * Each use should have a single profile.
+    * User should see link to create profiles when they sign up.
+    * User should be able to create and view their profile. They also be able to view the profile.The use should be able to upload a picture.
+    * Users should be able to view all profile. Pro users will also see contavt information.
+    
