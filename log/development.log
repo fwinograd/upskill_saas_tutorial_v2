@@ -11394,3 +11394,4 @@ Migrating to CreateProfiles (20170511224245)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+  [1m[36mProfile Load (2.0ms)[0m  [1m[34mSELECT "profiles".* FROM "profiles"[0m
