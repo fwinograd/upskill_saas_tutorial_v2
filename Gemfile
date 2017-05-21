@@ -53,6 +53,9 @@ gem 'jbuilder', '2.5.0'
   
 # Use paperclip for image upload
 gem 'paperclip', '4.3.6'
+
+# add google drive api
+gem 'google_drive'
   
 group :development, :test do
   # Use sqlite3 as the database for Active Record

@@ -20,3 +20,7 @@ Stripe integration
     * User should be able to create and view their profile. They also be able to view the profile.The use should be able to upload a picture.
     * Users should be able to view all profile. Pro users will also see contavt information.
     
+    OAuth
+    client = 733411917707-rabsbfdh2d5nna2ka5p44u3jrgcsl8ph.apps.googleusercontent.com
+    secret = NGxG1daJwFHY3Ckcuxt89P0a
+    
