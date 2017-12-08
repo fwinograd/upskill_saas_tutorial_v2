@@ -35,6 +35,7 @@ gem 'jbuilder', '2.5.0'
 
 # Use Twitter Bootstrap library for front end and layout
   gem 'bootstrap-sass', '3.3.7'
+#  gem 'bootstrap', '~> 4.0.0.alpha6'
 # add FontAwesome Icon Library  
   gem 'font-awesome-sass', '4.6.2' 
 group :development, :test do

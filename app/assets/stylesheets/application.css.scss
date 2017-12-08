@@ -28,20 +28,23 @@ h1, h2, h3 {
   font-family: "open sans" , sans-serif;
 }
 // Gradiaent Styles
-.navbar, .home-callout{
-// gradients provided by  @_ighosh at uigradients.com
-background: #00c6ff; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     
+.navbar{
+  margin-top: 10px;
+  
+  
 }
+.home-callout{
+  background: url('sunset-v3.tif') center, fixed;
+  
+}
+
 // Navbar STyles
 .navbar {
     border: none;
 }
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: gold;
   &:hover {
     color: white;
     opacity: 0.75;
@@ -60,11 +63,14 @@ background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, F
       background-color: #0072ff ;
     }
 }
-
+.tag-line {
+  color: gold;
+  background-color: brown ;
+}
 
 // Home Styles
 .home-callout {
-    color: white;
+    color: brown;
     margin-top: -20px;
     padding-top: 50px;
     padding-bottom: 100px;
